@@ -222,3 +222,24 @@ VALUES(10, 24, ' 17 секунд ', 'Москва', '2012-09-07');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
 VALUES(10, 25, ' 199 минут ', 'Москва', '2012-09-07');
+
+
+
+
+SELECT sportsman_name, rank, year_of_birth, country, personal_record FROM trainee.t_sportsman;
+SELECT competition_name, world_record FROM trainee.t_competition;
+select sportsman_name from trainee.t_sportsman where year_of_birth = '1990';
+select competition_name, world_record from t_competition where set_date = '2010-05-12' OR  set_date =  '2010-05-15';
+select hold_date from t_result where city = 'Москва' and result = '10 секунд ';
+select sportsman_name from t_sportsman where personal_record != '25 секунд';
+select competition_name from t_competition where world_record != '15 секунд' and set_date != '2015-12-02';
+select city from t_result where result in ('15 секунд', '25 секунд', '17 секунд', '9 секунд');
+select sportsman_name from t_sportsmanwhere year_of_birth = 2000 and rank not in (3 , 7 , 9);
+select hold_date from t_result where city like 'М%';
+ nen
+select competition_name from t_competition where competition_name like '%_еждународные%';
+select distinct  year_of_birth  from t_sportsman  
+
+
+
+
