@@ -1,7 +1,6 @@
 # Week_5
-
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 10 м', '10 секунд', '2020-02-21');
 
 INSERT INTO trainee.t_competition
@@ -9,79 +8,79 @@ INSERT INTO trainee.t_competition
 VALUES('Бег на 100 м', '50 секунд', '2010-05-12');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 100 км', '200 минут', '2010-05-15');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 5 км', '9 минут', '2015-04-10');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Международные соревнования по бегу на 1 км', '90 секунд', '2018-09-10');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 90 км', '210 минут', '2023-08-22');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 20 км', '5 минут', '2021-07-15');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 50 км', 'Сочи', '2017-05-17');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Международные соревнования по бегу на 100 м', '9 секунд', '2020-06-04');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 200 м', '15 секунд', '2007-06-12');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 400 м', '25 секунд', '2019-01-11');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 1 км', '60 секунд', '2018-02-24');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 400 м', '15 секунд', '2017-03-25');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 10 м', '7 секунд', '2021-04-26');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 30 км', '300 минут', '2022-05-24');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 10 км', '100 минут', '2020-06-14');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 800 м', '30 секунд', '2023-07-09');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 7 км', '5 минут', '2020-08-08');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 12 км', '12 минут', '2010-09-07');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 17 км', '17 минут', '2011-10-06');
 
 INSERT INTO trainee.t_competition
-(competition_name, city, set_date)
+(competition_name, world_record, set_date)
 VALUES('Бег на 20 км', '35 минут', '2012-11-05');
 
 INSERT INTO trainee.t_sportsman
@@ -150,76 +149,76 @@ VALUES('Екатерина Белова' , 2 , 2000, 'Россия', ' 99 мин
 
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(1, 1, ' 10 секунд ', 'Москва', 2022-05-20);
+VALUES(1, 1, ' 10 секунд ', 'Москва', '2022-05-20');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(1, 2, ' 15 секунд ', 'Москва', 2022-05-20);
+VALUES(1, 2, ' 15 секунд ', 'Москва', '2022-05-20');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(1, 3, ' 20 секунд ', 'Москва', 2022-05-20);
+VALUES(1, 3, ' 20 секунд ', 'Москва', '2022-05-20');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(2, 4, ' 50 секунд ', 'Санкт-Петербург', 2020-06-10);
+VALUES(2, 4, ' 50 секунд ', 'Санкт-Петербург', '2020-06-10');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(2, 5, ' 60 секунд ', 'Санкт-Петербург', 2020-06-10);
+VALUES(2, 5, ' 60 секунд ', 'Санкт-Петербург', '2020-06-10');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(2, 6, ' 45 секунд ', 'Санкт-Петербург', 2020-06-10);
+VALUES(2, 6, ' 45 секунд ', 'Санкт-Петербург', '2020-06-10');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(3, 7, ' 19 секунд ', 'Краснодар', 2000-08-25);
+VALUES(3, 7, ' 19 секунд ', 'Краснодар', '2000-08-25');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(3, 8, ' 22 секунд ', 'Краснодар', 2000-08-25);
+VALUES(3, 8, ' 22 секунд ', 'Краснодар', '2000-08-25');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(3, 9, ' 25 секунд ', 'Краснодар', 2000-08-25);
+VALUES(3, 9, ' 25 секунд ', 'Краснодар', '2000-08-25');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(4, 10, ' 10 минут ', 'Сочи', 2010-07-30);
+VALUES(4, 10, ' 10 минут ', 'Сочи', '2010-07-30');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(4, 11, ' 11 минут ', 'Сочи', 2010-07-30);
+VALUES(4, 11, ' 11 минут ', 'Сочи', '2010-07-30');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(4, 12, ' 12 минут ', 'Сочи', 2010-07-30);
+VALUES(4, 12, ' 12 минут ', 'Сочи', '2010-07-30');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(5, 13, ' 10 секунд ', 'Калининград', 2015-06-12);
+VALUES(5, 13, ' 10 секунд ', 'Калининград', '2015-06-12');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(5, 14, ' 45 секунд ', 'Калининград', 2015-06-12);
+VALUES(5, 14, ' 45 секунд ', 'Калининград', '2015-06-12');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(5, 15, ' 47 секунд ', 'Калининград', 2015-06-12);
+VALUES(5, 15, ' 47 секунд ', 'Калининград', '2015-06-12');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(6, 16, ' 25 секунд ', 'Москва', 2015-05-05);
+VALUES(6, 16, ' 25 секунд ', 'Москва', '2015-05-05');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(6, 17, ' 10 секунд ', 'Москва', 2015-05-05);
+VALUES(6, 17, ' 10 секунд ', 'Москва', '2015-05-05');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(7, 18, ' 99 секунд ', 'Нижний Новгород', 1999-10-10);
+VALUES(7, 18, ' 99 секунд ', 'Нижний Новгород', '1999-10-10');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(7, 19, ' 80 секунд ', 'Нижний Новгород', 1999-10-10);
+VALUES(7, 19, ' 80 секунд ', 'Нижний Новгород', '1999-10-10');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(8, 20, ' 100 минут ',  'Москва', 2000-05-09);
+VALUES(8, 20, ' 100 минут ',  'Москва', '2000-05-09');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(8, 21, ' 110 минут ', 'Москва', 2000-05-09);
+VALUES(8, 21, ' 110 минут ', 'Москва', '2000-05-09');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(9, 22, ' 200 минут ', 'Москва', 2012-09-07);
+VALUES(9, 22, ' 200 минут ', 'Москва', '2012-09-07');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(9, 23, ' 10 секунд ', 'Москва', 2012-09-07);
+VALUES(9, 23, ' 10 секунд ', 'Москва', '2012-09-07');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(10, 24, ' 17 секунд ', 'Москва', 2012-09-07);
+VALUES(10, 24, ' 17 секунд ', 'Москва', '2012-09-07');
 INSERT INTO trainee.t_result
 (competition_id, sportsman_id, "result", city, hold_date)
-VALUES(10, 25, ' 199 минут ', 'Москва', 2012-09-07);
+VALUES(10, 25, ' 199 минут ', 'Москва', '2012-09-07');
