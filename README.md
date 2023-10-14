@@ -238,8 +238,29 @@ select sportsman_name from t_sportsmanwhere year_of_birth = 2000 and rank not in
 select hold_date from t_result where city like 'М%';
  nen
 select competition_name from t_competition where competition_name like '%_еждународные%';
-select distinct  year_of_birth  from t_sportsman  
-
-
-
-
+select distinct  year_of_birth  from t_sportsman;
+select count  (*) from t_result where hold_date = '2014-12-05' ;
+select max(result) from t_result where city ='Москва';
+select min(year_of_birth) from t_sportsman where rank = 1 ;
+? select sportsman_name from t_sportsman, t_result tr where personal_record = tr."result" AND tr.hold_date = '2014-12-04';
+select competition_name from t_competition , t_result tr where set_date = '2015-04-20' and tr.city = 'Москва';
+select AVG(personal_record) from t_sportsman;
+select year_of_birth from t_sportsman , t_result tr where city = 'Москва' HAVING (personal_record > (avg (tr.result)));
+select sportsman_name from t_sportsman, t_competition tc
+where year_of_birth > extract (year from tc.set_date)and tc.world_record = '12 секунд';
+nen
+nen
+select * from t_sportsman , t_result tr where personal_record  = tr."result" ;
+select count  (*) from t_sportsman, t_competition tc where tc.competition_name like('%Региональные%') and sportsman_name like('%Иванов%');
+select city from t_result, t_competition tc where tc.world_record = "result" 
+select min("rank") from t_sportsman, t_competition where personal_record = world_record;
+select competition_name  from t_competition group by competition_nameorder by count(*) desc limit 1;
+select country  from t_sportsman group by country order by count(*) desc limit 1;
+update t_sportsman set "rank" = 1 from t_competition where personal_record = world_record;
+update t_competition t1 set set_date =set_date  +interval '4 day' from t_result t2 where t1.competition_id = t2.competition_id  and city = 'Москва';
+update t_sportsman  set country = 'Россия' where "rank" = 1 or "rank" = 2 and country  = 'Италия'
+update t_competition set competition_name = 'Бег с препятствиями' where competition_name = 'Бег'
+update t_result set "result" = ("result" - 2 ) where "result" > 45 and hold_date = '2012-05-20'
+delete from t_result t1 using t_sportsman t2 where t1.sportsman_id  = t2.sportsman_id and t1.city = 'Москва' and t2.year_of_birth <= 1980;
+delete from t_competition t1 using t_result t2 where t1.competition_id  = t2.competition_id and "result" = 20;
+delete from t_result t1 using t_sportsman t2 where t1.sportsman_id  = t2.sportsman_id and t2.year_of_birth = 1980;
